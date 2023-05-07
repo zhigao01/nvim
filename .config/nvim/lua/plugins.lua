@@ -48,6 +48,14 @@ return require('packer').startup(function(use)
             "williamboman/mason.nvim",
             "williamboman/mason-lspconfig.nvim",
         }
+        use {
+            'nvim-tree/nvim-tree.lua',
+            requires = {
+                'nvim-tree/nvim-web-devicons', -- optional
+            },
+            config = [[require('config.nvim-tree')]]
+        }
+
         ---------------------------------------
         -- NOTE: PUT YOUR THIRD PLUGIN HERE --
         ---------------------------------------
